@@ -75,40 +75,40 @@ $hero_classic_data = get_module_content('hero-classic', $hero_classic_data_defau
 
 // Module: restaurant-chef (Used for Presentation)
 $restaurant_chef_data_default = array(
-    'intro' => 'À propos',
+    'intro' => 'À propos de nous',
     'name' => 'Antoine Delfoin',
-    'title' => 'Artisan Multidisciplinaire',
+    'title' => 'Plombier, Électricien & Frigoriste à Gaillac et environs',
     'image' => 'images/photos/Oncle_Face.jpeg',
     'signature_dish' => '',
-    'bio_p1' => 'Je m’appelle Antoine, artisan à la tête de Delfoin Multiservices.',
-    'bio_p2' => 'Titulaire de diplômes en plomberie, électricité et génie climatique, j’interviens pour vos travaux d’installation, de rénovation, d’entretien et de dépannage, dans le strict respect des normes en vigueur.',
-    'quote' => '', // Removed as requested
-    'credentials' => [] // Cleared
+    'bio_p1' => 'Je m’appelle Antoine, artisan passionné à la tête de Delfoin Multiservices. Installé à Gaillac dans le Tarn (81), j\'interviens pour tous vos travaux de plomberie, d\'électricité et de climatisation, que ce soit pour une construction neuve ou une rénovation.',
+    'bio_p2' => 'Fort de plusieurs années d’expérience et titulaire de diplômes reconnus, je propose des services complets : dépannage d\'urgence, mise aux normes électriques, installation de pompe à chaleur ou rénovation de salle de bain. Mon engagement ? Un travail soigné, respectueux des normes en vigueur et une réactivité exemplaire pour mes clients d\'Albi, Rabastens, Lisle-sur-Tarn et environs.',
+    'quote' => '',
+    'credentials' => []
 );
 $restaurant_chef_data = get_module_content('restaurant-chef', $restaurant_chef_data_default);
 
 // Module: services-grid
 $services_grid_data_default = array(
-    'overtitle' => 'Nos Domaines',
-    'title' => 'Ce que nous faisons',
-    'subtitle' => 'Des solutions sur mesure pour répondre à tous vos besoins.',
+    'overtitle' => 'Nos Domaines d\'Expertise',
+    'title' => 'Nos prestations techniques',
+    'subtitle' => 'Des solutions professionnelles pour votre confort thermique et sanitaire.',
     'services' => [
         [
             'icon' => 'droplet',
-            'title' => 'Plomberie',
-            'description' => 'Installation sanitaire, réparation de fuites, robinetterie et tuyauterie.',
+            'title' => 'Plomberie Sanitaire',
+            'description' => 'Installation complète de sanitaires, création de salle de bain, recherche de fuite d\'eau, débouchage et dépannage plomberie rapide secteur Gaillac/Albi.',
             'link' => 'plomberie.php'
         ],
         [
             'icon' => 'zap',
-            'title' => 'Electricité',
-            'description' => 'Installation complète, mise aux normes, dépannage, rénovation électrique et domotique.',
+            'title' => 'Électricité Générale',
+            'description' => 'Mise aux normes (NFC 15-100), remplacement de tableau électrique, installation de prises, éclairage et dépannage de panne électrique 7j/7.',
             'link' => 'electricite.php'
         ],
         [
             'icon' => 'wind',
-            'title' => 'Climatisation',
-            'description' => 'Installation de climatiseurs, entretien et dépannage de systèmes thermiques.',
+            'title' => 'Climatisation & Chauffage',
+            'description' => 'Pose de climatisation réversible, pompe à chaleur air/air, entretien annuel et dépannage de vos systèmes de chauffage toutes marques.',
             'link' => 'climatisation.php'
         ]
     ]
@@ -156,6 +156,31 @@ $contact_minimal_data_default = array(
 
 $contact_minimal_data = get_module_content('contact-minimal', $contact_minimal_data_default);
 
+// Module: faq-accordion
+$faq_data_default = array(
+    'title' => 'Questions Fréquentes',
+    'subtitle' => 'Tout savoir sur nos interventions plomberie, électricité et clim.',
+    'items' => [
+        [
+            'question' => 'Intervenez-vous en urgence ?',
+            'answer' => 'Oui, pour les pannes critiques (fuite d\'eau importante, panne électrique totale), nous intervenons 7j/7 dans le secteur de Gaillac et Albi.'
+        ],
+        [
+            'question' => 'Quel est votre périmètre d\'intervention ?',
+            'answer' => 'Nous nous déplaçons principalement sur Gaillac (81600), Albi, Rabastens, Lisle-sur-Tarn et dans un rayon de 30 km alentour.'
+        ],
+        [
+            'question' => 'Vos travaux sont-ils couverts par une garantie ?',
+            'answer' => 'Absolument. En tant qu\'artisan qualifié, toutes nos installations sont couvertes par une garantie décennale et responsabilité civile professionnelle.'
+        ],
+        [
+            'question' => 'Comment obtenir un devis ?',
+            'answer' => 'C\'est simple et gratuit. Contactez-nous par téléphone ou via le bouton de contact en bas de page pour une estimation rapide de votre projet.'
+        ]
+    ]
+);
+$faq_data = get_module_content('faq-accordion', $faq_data_default);
+
 require_once 'modules/section-nav.php';
 $section_nav_links = [
     ['text' => 'Présentation', 'anchor' => '#presentation'],
@@ -171,21 +196,55 @@ $section_nav_links = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delfoin Multiservices - Plomberie, Chauffage, Climatisation</title>
+    <title>Delfoin Multiservices - Plombier, Électricien, Climatisation à Gaillac (81)</title>
     <meta name="description"
-        content="Antoine Delfoin, artisan expert en plomberie, chauffage et climatisation. Services d'installation, dépannage et entretien.">
+        content="Antoine Delfoin, artisan expert à Gaillac (81). Installation et dépannage plomberie, électricité, climatisation. Intervention rapide sur Albi et Tarn. Devis gratuit.">
+    <link rel="canonical" href="https://delfoin-multiservices.fr/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Delfoin Multiservices",
+      "image": "https://delfoin-multiservices.fr/images/logo/logo_complet-removebg-preview.png",
+      "telephone": "+33 6 15 80 81 93",
+      "email": "Delfoin.multiservices@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gaillac",
+        "postalCode": "81600",
+        "addressRegion": "Tarn",
+        "addressCountry": "FR"
+      },
+      "url": "https://delfoin-multiservices.fr",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "12:00"
+        }
+      ]
+    }
+    </script>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/theme-variables.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/modules/header-classic.css">
-    <link rel="stylesheet" href="css/modules/hero-classic.css">
-    <link rel="stylesheet" href="css/modules/restaurant-chef.css">
-    <link rel="stylesheet" href="css/modules/services-grid.css">
-    <link rel="stylesheet" href="css/modules/testimonials-carousel.css">
-    <link rel="stylesheet" href="css/modules/contact-minimal.css">
-    <link rel="stylesheet" href="css/modules/section-nav.css">
+    <link rel="stylesheet" href="css/theme-variables.css?v=2">
+    <link rel="stylesheet" href="css/base.css?v=2">
+    <link rel="stylesheet" href="css/modules/header-classic.css?v=2">
+    <link rel="stylesheet" href="css/modules/hero-classic.css?v=2">
+    <link rel="stylesheet" href="css/modules/restaurant-chef.css?v=2">
+    <link rel="stylesheet" href="css/modules/services-grid.css?v=2">
+    <link rel="stylesheet" href="css/modules/testimonials-carousel.css?v=2">
+    <link rel="stylesheet" href="css/modules/contact-minimal.css?v=2">
+    <link rel="stylesheet" href="css/modules/section-nav.css?v=2">
     <style>
         /* Minimalist Loader */
         #page-loader {
@@ -291,6 +350,10 @@ $section_nav_links = [
 
         <div id="testimonials">
             <?php render_testimonials_carousel($testimonials_carousel_data); ?>
+        </div>
+
+        <div id="faq">
+            <?php render_faq_accordion($faq_data); ?>
         </div>
 
         <div id="contact">

@@ -1,0 +1,97 @@
+/* ========================================
+   MODULE: project-detail
+   Style exclusif pour les pages de réalisation
+   Thème: Blanc Complet & Texte Foncé
+   ======================================== */
+
+.project-detail {
+    background-color: var(--color-background, #FFFFFF) !important;
+    color: var(--color-text-primary, #00324D) !important;
+    padding: 120px 20px 80px;
+    min-height: 80vh;
+}
+
+.project-detail__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Typography Overrides */
+.project-detail__title {
+    font-family: var(--font-heading, 'Montserrat', sans-serif);
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00324D !important;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.project-detail__subtitle {
+    font-family: var(--font-heading, 'Montserrat', sans-serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #45B97C !important;
+    /* Green Accent */
+    margin-bottom: 3rem;
+    display: block;
+}
+
+.project-detail__content {
+    font-family: var(--font-body, 'Inter', sans-serif);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #00324D !important;
+}
+
+.project-detail__content h2 {
+    font-family: var(--font-heading, 'Montserrat', sans-serif);
+    font-size: 2rem;
+    color: #00324D !important;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-detail__content p {
+    margin-bottom: 1.5rem;
+}
+
+.project-detail__content strong {
+    font-weight: 700;
+    color: #00324D;
+}
+
+/* Image styling within content */
+.project-detail__image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 2rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Back Link */
+.project-detail__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #00324D;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.project-detail__back:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .project-detail {
+        padding-top: 100px;
+    }
+
+    .project-detail__title {
+        font-size: 2.25rem;
+    }
+}

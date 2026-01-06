@@ -476,3 +476,71 @@ function render_contact_minimal($data = [], $moduleId = '')
 }
 
 
+
+/**
+ * Module: faq-accordion
+ * Foire aux questions style accordéon
+ */
+function render_faq_accordion($data = [], $moduleId = '')
+{
+    $defaults = [
+        'title' => 'Questions Fréquentes',
+        'subtitle' => 'Retrouvez ici les réponses à vos questions les plus courantes.',
+        'items' => [
+            ['question' => 'Question 1 ?', 'answer' => 'Réponse 1.'],
+            ['question' => 'Question 2 ?', 'answer' => 'Réponse 2.']
+        ]
+    ];
+    $config = array_merge($defaults, $data);
+    ?>
+    <section class="faq-accordion" style="padding: 80px 20px; background: #f9f9f9;" data-module="<?= $moduleId ?>">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="font-size: 2.5rem; color: #111827; margin-bottom: 16px;" data-field="title">
+                    <?= htmlspecialchars($config['title']) ?></h2>
+                <p style="color: #6B7280;" data-field="subtitle"><?= htmlspecialchars($config['subtitle']) ?></p>
+            </div>
+
+            <div class="faq-accordion__container">
+                <?php foreach ($config['items'] as $index => $item): ?>
+                    <div class="accordion-item"
+                        style="background: white; border-radius: 8px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                        <button class="accordion-header"
+                            style="width: 100%; padding: 20px; text-align: left; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1.1rem; color: #111827;"
+                            onclick="this.parentElement.classList.toggle('active');">
+                            <span data-field="items.<?= $index ?>.question"><?= htmlspecialchars($item['question']) ?></span>
+                            <span style="font-size: 1.5rem; color: #E8A082;">+</span>
+                        </button>
+                        <div class="accordion-content"
+                            style="display: none; padding: 0 20px 20px; color: #4B5563; line-height: 1.6;">
+                            <p data-field="items.<?= $index ?>.answer"><?= nl2br(htmlspecialchars($item['answer'])) ?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <style>
+            .accordion-item.active .accordion-content {
+                display: block;
+                animation: slideDown 0.3s ease-out;
+            }
+
+            .accordion-item.active .accordion-header span:last-child {
+                transform: rotate(45deg);
+            }
+
+            @keyframes slideDown {
+                from {
+                    opacity: 0;
+                    transform: translateY(-10px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </section>
+    <?php
+}

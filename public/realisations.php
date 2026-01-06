@@ -4,14 +4,14 @@ require_once 'modules/portfolio-grid.php';
 
 // Header data
 $header_data = [
-    'logo_path' => 'images/Logo_V3.svg',
-    'logo_alt' => 'Delfoin Multiservices',
-    'nav_items' => [
-        ['label' => 'Accueil', 'link' => 'index.php'],
-        ['label' => 'Plomberie', 'link' => 'plomberie.php'],
-        ['label' => 'Electricité', 'link' => 'electricite.php'],
-        ['label' => 'Climatisation', 'link' => 'climatisation.php'],
-        ['label' => 'Réalisations', 'link' => 'realisations.php']
+    'logo' => '',
+    'logo_image' => 'images/logo/logo_medium-removebg-preview.png',
+    'nav_links' => [
+        ['text' => 'Accueil', 'url' => 'index.php'],
+        ['text' => 'Plomberie', 'url' => 'plomberie.php'],
+        ['text' => 'Electricité', 'url' => 'electricite.php'],
+        ['text' => 'Climatisation', 'url' => 'climatisation.php'],
+        ['text' => 'Réalisations', 'url' => 'realisations.php', 'active' => true]
     ],
     'cta_text' => 'Contact',
     'cta_link' => '#contact'
