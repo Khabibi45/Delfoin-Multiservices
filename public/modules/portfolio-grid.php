@@ -225,6 +225,19 @@ function render_portfolio_grid($data = [], $moduleId = '')
                     } else {
                         emptyMessage.style.display = 'none';
                         document.querySelector('.portfolio-masonry').style.display = 'grid';
+                        
+                        // Smart scroll: scroll to first visible item of this category
+                        if (filter !== '*') {
+                            const firstVisibleItem = document.querySelector(`.portfolio-item[data-category="${filter}"]`);
+                            if (firstVisibleItem) {
+                                setTimeout(() => {
+                                    firstVisibleItem.scrollIntoView({ 
+                                        behavior: 'smooth', 
+                                        block: 'center' 
+                                    });
+                                }, 100);
+                            }
+                        }
                     }
                 });
             });

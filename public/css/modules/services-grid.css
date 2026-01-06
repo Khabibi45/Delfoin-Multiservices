@@ -141,11 +141,19 @@
 }
 
 @media (max-width: 640px) {
+    .services-grid {
+        padding: 60px 16px;
+    }
+
     .services-grid__grid {
         grid-template-columns: 1fr;
     }
-    
+
     .services-grid__title {
         font-size: var(--font-size-3xl, 2rem);
+    }
+
+    .services-grid__card {
+        padding: 24px;
     }
 }
