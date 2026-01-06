@@ -1,0 +1,91 @@
+/* ========================================
+   MODULE: header-classic
+   Header classique
+   Compatible avec tous les thèmes
+   ======================================== */
+
+.header-classic {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--color-surface, #ffffff);
+    z-index: var(--z-fixed, 1000);
+    transition: box-shadow var(--transition-duration, 0.3s) ease;
+}
+
+.header-classic--scrolled {
+    box-shadow: var(--shadow-medium, 0 2px 20px rgba(0, 0, 0, 0.1));
+}
+
+.header-classic__container {
+    max-width: var(--container-max-width, 1200px);
+    margin: 0 auto;
+    padding: 0 var(--container-padding, 20px);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-classic__logo {
+    font-size: var(--font-size-2xl, 1.5rem);
+    font-weight: var(--font-weight-heading, 800);
+    font-family: var(--font-heading, inherit);
+    color: var(--color-text-primary, #111827);
+    text-decoration: none;
+}
+
+.header-classic__nav {
+    display: flex;
+    gap: 32px;
+}
+
+.header-classic__nav-link {
+    color: var(--color-text-secondary, #374151);
+    text-decoration: none;
+    font-size: var(--font-size-base, 0.9375rem);
+    font-weight: var(--font-weight-medium, 500);
+    font-family: var(--font-body, inherit);
+    transition: color var(--transition-duration, 0.3s) ease;
+}
+
+.header-classic__nav-link:hover,
+.header-classic__nav-link--active {
+    color: var(--color-primary, #E8A082);
+}
+
+.header-classic__cta {
+    padding: var(--btn-padding-y, 10px) var(--btn-padding-x, 24px);
+    background: var(--color-primary, #E8A082);
+    color: var(--color-text-on-primary, #ffffff);
+    text-decoration: none;
+    border-radius: var(--radius-button, 8px);
+    font-weight: var(--font-weight-semibold, 600);
+    font-size: var(--font-size-base, 0.9375rem);
+    font-family: var(--font-body, inherit);
+    transition: transform var(--transition-duration, 0.3s) ease;
+}
+
+.header-classic__cta:hover {
+    transform: translateY(-2px);
+}
+
+.header-classic__mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+@media (max-width: 768px) {
+    .header-classic__nav,
+    .header-classic__cta {
+        display: none;
+    }
+    
+    .header-classic__mobile-toggle {
+        display: block;
+    }
+}

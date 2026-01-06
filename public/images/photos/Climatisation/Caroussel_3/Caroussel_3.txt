@@ -1,0 +1,2 @@
+Installation d'un système de VMC gainable dans une pâtisserie.
+Ce système permet une aération constante afin d'éliminer les particules de farine en suspension et pour répondre au besoin du client, j'ai installé un variateur qui permet d'évacuer la fumée au moment de l'ouverture du four.

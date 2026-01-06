@@ -1,0 +1,45 @@
+:root {
+  /* Name: Blanc Complet */
+  /* Description: Fond blanc avec logo couleur et tagline complète */
+
+  /* Colors */
+  --color-primary: #45B97C;
+  --color-primary-dark: #3AAA6D;
+  --color-secondary: #00324D;
+  --color-accent: #45B97C;
+  --color-background: #FFFFFF;
+  --color-background-alt: #F5F7FA;
+  /* Soft Blue-Grey for alternating sections */
+  --color-surface: #FFFFFF;
+  --color-text-primary: #00324D;
+  --color-text-secondary: #4A6580;
+  --color-border: #E2E8ED;
+
+  /* Semantic Mappings for components using generic names */
+  --primary: var(--color-primary);
+  --primary-dark: var(--color-primary-dark);
+  --accent: var(--color-accent);
+  --bg-dark: var(--color-secondary);
+  --bg-alt: var(--color-background-alt);
+  --bg-card: var(--color-surface);
+  --text-primary: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --border: var(--color-border);
+
+  /* Typography */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Borders */
+  --radius-medium: 4px;
+  --radius-large: 8px;
+
+  /* Spacing & Layout Defaults */
+  --container-width: 1200px;
+  --header-height: 80px;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+}

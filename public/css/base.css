@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text-primary);
+    background: var(--color-background);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: var(--container-max-width, 1200px);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: var(--spacing-section, 60px) 0;
+}
+
+/* Global Alternating Sections */
+/* Global Alternating Sections */
+main>section:nth-of-type(odd) {
+    background-color: #4A6580;
+    color: #FFFFFF;
+}
+
+/* Ensure headings and muted text adapt in dark sections */
+main>section:nth-of-type(odd) h1,
+main>section:nth-of-type(odd) h2,
+main>section:nth-of-type(odd) h3,
+main>section:nth-of-type(odd) h4,
+main>section:nth-of-type(odd) h5,
+main>section:nth-of-type(odd) h6 {
+    color: #FFFFFF;
+}
+
+main>section:nth-of-type(odd) p,
+main>section:nth-of-type(odd) span,
+main>section:nth-of-type(odd) li {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Section avant le footer (Pre-Footer) - Gris Bleu */
+main> :nth-last-child(2) {
+    background-color: #4A6580 !important;
+    color: #FFFFFF !important;
+}
+
+/* Le Footer (Dernier enfant) - Blanc avec texte Navy */
+main> :last-child {
+    background-color: #FFFFFF !important;
+    color: #00324D !important;
+}
+
+main> :last-child a {
+    color: #00324D !important;
+}

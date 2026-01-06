@@ -1,0 +1,99 @@
+/* ========================================
+   MODULE: contact-minimal
+   Contact minimaliste
+   Compatible avec tous les thèmes
+   ======================================== */
+
+.contact-minimal {
+    padding: 120px var(--container-padding, 20px);
+    background: var(--color-background, #ffffff);
+    text-align: center;
+}
+
+.contact-minimal__title {
+    font-size: var(--font-size-h2, 2.5rem);
+    font-weight: var(--font-weight-bold, 700);
+    font-family: var(--font-heading, inherit);
+    color: var(--color-text-primary, #111827);
+    letter-spacing: var(--letter-spacing-heading, 0);
+    text-transform: var(--text-transform-heading, none);
+    margin: 0 0 32px 0;
+}
+
+.contact-minimal__email {
+    font-size: var(--font-size-h2, 2rem);
+    font-family: var(--font-heading, inherit);
+    color: var(--color-primary, #E8A082);
+    text-decoration: none;
+    position: relative;
+    font-weight: var(--font-weight-semibold, 600);
+}
+
+.contact-minimal__email::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--color-primary, #E8A082);
+    transform: scaleX(0);
+    transition: transform var(--transition-duration, 0.3s) ease;
+}
+
+.contact-minimal__email:hover::after {
+    transform: scaleX(1);
+}
+
+.contact-minimal__socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 48px;
+}
+
+.contact-minimal__social {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full, 50%);
+    background: var(--color-background-alt, #F3F4F6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary, #6B7280);
+    text-decoration: none;
+    transition: background var(--transition-duration, 0.3s) ease, color var(--transition-duration, 0.3s) ease;
+}
+
+.contact-minimal__social:hover {
+    background: var(--color-primary, #E8A082);
+    color: var(--color-text-on-primary, #ffffff);
+}
+
+/* Overrides for when Contact is the last section (White Background, Navy Text) */
+main> :last-child .contact-minimal,
+main> :last-child.contact-minimal {
+    background: transparent !important;
+    /* Let parent color show through */
+    color: #00324D !important;
+}
+
+main> :last-child .contact-minimal__title {
+    color: #00324D !important;
+}
+
+main> :last-child .contact-minimal__email {
+    color: #00324D !important;
+}
+
+main> :last-child .contact-minimal__social {
+    background: #E2E8ED;
+    /* Light grey button */
+    color: #00324D;
+    /* Navy icon */
+}
+
+main> :last-child .contact-minimal__social:hover {
+    background: var(--color-primary, #3AAA6D);
+    color: #FFFFFF;
+}

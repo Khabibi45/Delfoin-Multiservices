@@ -1,0 +1,9 @@
+{
+  "name": "portfolio-grid",
+  "category": ["portfolio", "creative"],
+  "features": ["project-gallery", "filters", "lightbox", "masonry"],
+  "style_support": ["modern", "minimal", "creative", "dark"],
+  "inputs_required": ["projects[{title, category, image, description, link}]", "categories"],
+  "priority": 90
+}
+

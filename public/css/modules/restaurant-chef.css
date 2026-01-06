@@ -1,0 +1,243 @@
+/* ========================================
+   MODULE: restaurant-chef
+   Présentation du chef
+   Compatible avec tous les thèmes
+   ======================================== */
+
+.restaurant-chef {
+    padding: var(--spacing-section, 100px) 0;
+    background: var(--color-background, #FFFFFF);
+    overflow: hidden;
+}
+
+.restaurant-chef .container {
+    max-width: var(--container-max-width, 1200px);
+    margin: 0 auto;
+    padding: 0 var(--container-padding, 20px);
+}
+
+.chef-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.chef-image-container {
+    position: relative;
+}
+
+.chef-image-frame {
+    position: relative;
+    border-radius: var(--radius-2xl, 20px);
+    overflow: hidden;
+    box-shadow: var(--shadow-large, 0 30px 60px rgba(44, 24, 16, 0.2));
+}
+
+.chef-image-frame::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: 40px;
+    bottom: 40px;
+    border: 3px solid var(--color-primary, #D4AF37);
+    border-radius: var(--radius-2xl, 20px);
+    z-index: -1;
+}
+
+.chef-image-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.chef-signature-badge {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    background: var(--color-primary-dark, #8B4513);
+    color: var(--color-text-on-primary, #FFFFFF);
+    padding: 20px 30px;
+    border-radius: var(--radius-large, 16px);
+    box-shadow: var(--shadow-large, 0 15px 40px rgba(139, 69, 19, 0.3));
+}
+
+.chef-signature-badge span {
+    display: block;
+    font-size: var(--font-size-xs, 0.75rem);
+    font-family: var(--font-body, inherit);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-widest, 0.1em);
+    opacity: 0.8;
+    margin-bottom: 4px;
+}
+
+.chef-signature-badge strong {
+    font-family: var(--font-heading, 'Playfair Display', Georgia, serif);
+    font-size: var(--font-size-xl, 1.25rem);
+    font-style: italic;
+}
+
+.chef-content {
+    padding-left: 20px;
+}
+
+.chef-intro {
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(var(--color-primary-rgb, 212, 175, 55), 0.15);
+    border-radius: var(--radius-full, 30px);
+    color: var(--color-primary-dark, #8B4513);
+    font-size: var(--font-size-sm, 0.875rem);
+    font-weight: var(--font-weight-semibold, 600);
+    font-family: var(--font-body, inherit);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-widest, 0.1em);
+    margin-bottom: 20px;
+}
+
+.chef-name {
+    font-family: var(--font-heading, 'Playfair Display', Georgia, serif);
+    font-size: var(--font-size-h1, 3rem);
+    font-weight: var(--font-weight-heading, 700);
+    color: var(--color-text-primary, #2C1810);
+    letter-spacing: var(--letter-spacing-heading, 0);
+    text-transform: var(--text-transform-heading, none);
+    margin-bottom: 8px;
+}
+
+.chef-title {
+    font-size: var(--font-size-xl, 1.25rem);
+    font-family: var(--font-body, inherit);
+    color: var(--color-primary, #D4AF37);
+    font-weight: var(--font-weight-semibold, 600);
+    margin-bottom: 30px;
+}
+
+.chef-bio {
+    font-size: var(--font-size-lg, 1.1rem);
+    font-family: var(--font-body, inherit);
+    line-height: var(--line-height-relaxed, 1.8);
+    color: var(--color-text-secondary, #6B5344);
+    margin-bottom: 30px;
+}
+
+.chef-bio p {
+    margin-bottom: 16px;
+}
+
+.chef-bio p:last-child {
+    margin-bottom: 0;
+}
+
+.chef-credentials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.chef-credential {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: var(--color-background-alt, #FFFBF5);
+    border-radius: var(--radius-medium, 10px);
+    border: 1px solid var(--color-border, #E8E0D5);
+}
+
+.chef-credential svg {
+    width: 24px;
+    height: 24px;
+    color: var(--color-primary, #D4AF37);
+}
+
+.chef-credential span {
+    font-size: var(--font-size-sm, 0.9rem);
+    font-weight: var(--font-weight-semibold, 600);
+    font-family: var(--font-body, inherit);
+    color: var(--color-text-primary, #2C1810);
+}
+
+.chef-quote {
+    position: relative;
+    padding: 30px;
+    background: var(--color-background-alt, linear-gradient(135deg, #FFFBF5, #F9F5EE));
+    border-radius: var(--radius-large, 16px);
+    border-left: 4px solid var(--color-primary, #D4AF37);
+}
+
+.chef-quote::before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-family: var(--font-heading, 'Playfair Display', Georgia, serif);
+    font-size: 4rem;
+    color: var(--color-primary, #D4AF37);
+    opacity: 0.3;
+    line-height: 1;
+}
+
+.chef-quote p {
+    font-family: var(--font-heading, 'Playfair Display', Georgia, serif);
+    font-size: var(--font-size-xl, 1.25rem);
+    font-style: italic;
+    color: var(--color-text-primary, #2C1810);
+    line-height: var(--line-height-relaxed, 1.7);
+    margin: 0;
+    padding-left: 30px;
+}
+
+@media (max-width: 992px) {
+    .chef-wrapper {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .chef-image-frame::before {
+        display: none;
+    }
+
+    .chef-signature-badge {
+        right: 20px;
+        bottom: -20px;
+    }
+
+    .chef-content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .chef-credentials {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .restaurant-chef {
+        padding: var(--spacing-section-sm, 60px) 0;
+    }
+
+    .chef-name {
+        font-size: var(--font-size-4xl, 2.25rem);
+    }
+
+    .chef-bio {
+        font-size: var(--font-size-base, 1rem);
+    }
+
+    .chef-quote p {
+        font-size: var(--font-size-lg, 1.1rem);
+    }
+
+    .chef-credentials {
+        flex-direction: column;
+    }
+
+    .chef-credential {
+        justify-content: center;
+    }
+}
