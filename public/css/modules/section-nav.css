@@ -68,12 +68,7 @@
 }
 
 @media (max-width: 768px) {
-    .section-nav {
-        gap: 1rem;
-    }
-
-    .section-nav__link {
-        font-size: 0.85rem;
-        padding: 0.4rem 0.8rem;
+    .section-nav-container {
+        display: none !important;
     }
 }
