@@ -76,12 +76,12 @@ $hero_classic_data = get_module_content('hero-classic', $hero_classic_data_defau
 // Module: restaurant-chef (Used for Presentation)
 $restaurant_chef_data_default = array(
     'intro' => 'À propos de nous',
-    'name' => 'Antoine Delfoin',
-    'title' => 'Plombier, Électricien & Frigoriste à Gaillac et environs',
+    'name' => 'Antoine',
+    'title' => 'Plombier, Électricien & Climaticien à Albi et environs',
     'image' => 'images/photos/Oncle_Face.jpeg',
     'signature_dish' => '',
-    'bio_p1' => 'Je m’appelle Antoine, artisan passionné à la tête de Delfoin Multiservices. Installé à Gaillac dans le Tarn (81), j\'interviens pour tous vos travaux de plomberie, d\'électricité et de climatisation, que ce soit pour une construction neuve ou une rénovation.',
-    'bio_p2' => 'Fort de plusieurs années d’expérience et titulaire de diplômes reconnus, je propose des services complets : dépannage d\'urgence, mise aux normes électriques, installation de pompe à chaleur ou rénovation de salle de bain. Mon engagement ? Un travail soigné, respectueux des normes en vigueur et une réactivité exemplaire pour mes clients d\'Albi, Rabastens, Lisle-sur-Tarn et environs.',
+    'bio_p1' => 'Je m’appelle Antoine, artisan passionné à la tête de Delfoin Multiservices. Installé à Albi dans le Tarn (81), j\'interviens pour tous vos travaux de plomberie, d\'électricité et de climatisation, que ce soit pour une construction neuve ou une rénovation.',
+    'bio_p2' => 'Fort de plusieurs années d’expérience et titulaire de diplômes reconnus, je propose des services complets : dépannage d\'urgence, mise aux normes électriques, installation de pompe à chaleur ou rénovation de salle de bain. Mon engagement ? Un travail soigné, respectueux des normes en vigueur et une réactivité exemplaire pour mes clients d\'Albi, Gaillac, Cordes-sur-ciel, Carmaux et environs.',
     'quote' => '',
     'credentials' => []
 );
@@ -96,7 +96,7 @@ $services_grid_data_default = array(
         [
             'icon' => 'droplet',
             'title' => 'Plomberie Sanitaire',
-            'description' => 'Installation complète de sanitaires, création de salle de bain, recherche de fuite d\'eau, débouchage et dépannage plomberie rapide secteur Gaillac/Albi.',
+            'description' => 'Installation complète de sanitaires, création de salle de bain, recherche de fuite d\'eau, débouchage et dépannage plomberie rapide secteur Albi.',
             'link' => 'plomberie.php'
         ],
         [
@@ -151,7 +151,7 @@ $testimonials_carousel_data = get_module_content('testimonials-carousel', $testi
 $contact_minimal_data_default = array(
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '+33 6 15 80 81 93'
+    'phone_number' => '+33 6 64 95 49 41'
 );
 
 $contact_minimal_data = get_module_content('contact-minimal', $contact_minimal_data_default);
@@ -198,7 +198,7 @@ $section_nav_links = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delfoin Multiservices - Plombier, Électricien, Climatisation à Gaillac (81)</title>
     <meta name="description"
-        content="Antoine Delfoin, artisan expert à Gaillac (81). Installation et dépannage plomberie, électricité, climatisation. Intervention rapide sur Albi et Tarn. Devis gratuit.">
+        content="Antoine, artisan expert à Gaillac (81). Installation et dépannage plomberie, électricité, climatisation. Intervention rapide sur Albi et Tarn. Devis gratuit.">
     <link rel="canonical" href="https://delfoin-multiservices.fr/" />
     <script type="application/ld+json">
     {
@@ -206,7 +206,7 @@ $section_nav_links = [
       "@type": "LocalBusiness",
       "name": "Delfoin Multiservices",
       "image": "https://delfoin-multiservices.fr/images/logo/logo_complet-removebg-preview.png",
-      "telephone": "+33 6 15 80 81 93",
+      "telephone": "+33 6 64 95 49 41",
       "email": "Delfoin.multiservices@gmail.com",
       "address": {
         "@type": "PostalAddress",

@@ -89,7 +89,7 @@ $header_data = [
         'title' => 'Un projet similaire ?',
         'subtitle' => 'Contactez-moi pour un devis gratuit.',
         'email' => 'Delfoin.multiservices@gmail.com',
-        'phone' => '+33 6 15 80 81 93'
+        'phone' => '+33 6 64 95 49 41'
     ];
     render_contact_minimal($contact_minimal_data);
     ?>
