@@ -20,7 +20,7 @@ $header_data = [
 $contact_data = [
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '06 12 34 56 78'
+    'phone_number' => '+33 6 64 95 49 41'
 ];
 ?>
 <!DOCTYPE html>
@@ -68,73 +68,66 @@ $contact_data = [
 
     <?php render_header_classic($header_data); ?>
 
-    <main>
-        </head>
+    <main class="project-detail">
+        <div class="project-detail__container">
+            <a href="plomberie.php" class="project-detail__back">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Retour aux services Plomberie
+            </a>
 
-        <body>
+            <span class="project-detail__subtitle">Création & Aménagement</span>
+            <h1 class="project-detail__title">Votre Salle de Bain Clé en Main</h1>
 
-            <?php render_header_classic($header_data); ?>
+            <div class="project-detail__content">
+                <h2>Du rêve à la réalité</h2>
+                <p>
+                    La famille Petit avait en tête cette salle de bain "comme dans les magazines" depuis des
+                    années.
+                    Ils voulaient remplacer leur vieille baignoire sabot, peu pratique et glissante, par une
+                    grande douche à
+                    l'italienne.
+                    Mais ils avaient peur des travaux : poussière, délais, et surtout, la coordination entre
+                    plombier,
+                    carreleur et électricien.
+                </p>
 
-            <main class="project-detail">
-                <div class="project-detail__container">
-                    <a href="plomberie.php" class="project-detail__back">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M19 12H5M12 19l-7-7 7-7" />
-                        </svg>
-                        Retour aux services Plomberie
-                    </a>
+                <h2>Un interlocuteur unique pour tout gérer</h2>
+                <p>
+                    L'avantage avec <strong>Delfoin Multiservices</strong>, c'est que je gère l'ensemble du
+                    chantier.
+                    Pas besoin d'attendre que l'électricien passe pour que le plombier puisse avancer.
+                    Avec eux, j'ai conçu le plan : déplacement des arrivées d'eau, création d'une niche
+                    carrelée dans
+                    la douche, pose d'un meuble double vasque suspendu.
+                </p>
 
-                    <span class="project-detail__subtitle">Création & Aménagement</span>
-                    <h1 class="project-detail__title">Votre Salle de Bain Clé en Main</h1>
-
-                    <div class="project-detail__content">
-                        <h2>Du rêve à la réalité</h2>
-                        <p>
-                            La famille Petit avait en tête cette salle de bain "comme dans les magazines" depuis des
-                            années.
-                            Ils voulaient remplacer leur vieille baignoire sabot, peu pratique et glissante, par une
-                            grande douche à
-                            l'italienne.
-                            Mais ils avaient peur des travaux : poussière, délais, et surtout, la coordination entre
-                            plombier,
-                            carreleur et électricien.
-                        </p>
-
-                        <h2>Un interlocuteur unique pour tout gérer</h2>
-                        <p>
-                            L'avantage avec <strong>Delfoin Multiservices</strong>, c'est que je gère l'ensemble du
-                            chantier.
-                            Pas besoin d'attendre que l'électricien passe pour que le plombier puisse avancer.
-                            Nous avons conçu ensemble le plan : déplacement des arrivées d'eau, création d'une niche
-                            carrelée dans
-                            la douche, pose d'un meuble double vasque suspendu.
-                        </p>
-
-                        <h2>Le souci du détail</h2>
-                        <p>
-                            Une belle salle de bain, ça se joue dans les finitions. L'alignement des joints de
-                            carrelage,
-                            l'étanchéité parfaite sous la douche (primordial !),
-                            l'éclairage d'ambiance bien positionné.
-                            Après deux semaines de travaux intensifs, la famille Petit a découvert son nouvel espace
-                            bien-être.
-                            Leur réaction ? "C'est encore mieux que ce qu'on imaginait". C'est pour ces moments-là que
-                            je fais ce
-                            métier.
-                        </p>
-                        <p>
-                            Vous avez un projet ? Discutons-en. Je vous apporterai mes conseils techniques pour
-                            optimiser l'espace
-                            et le budget.
-                        </p>
-                    </div>
-                </div>
-            </main>
-            <div id="contact">
-                <?php render_contact_minimal($contact_data); ?>
+                <h2>Le souci du détail</h2>
+                <p>
+                    Une belle salle de bain, ça se joue dans les finitions. L'alignement des joints de
+                    carrelage,
+                    l'étanchéité parfaite sous la douche (primordial !),
+                    l'éclairage d'ambiance bien positionné.
+                    Après deux semaines de travaux intensifs, la famille Petit a découvert son nouvel espace
+                    bien-être.
+                    Leur réaction ? "C'est encore mieux que ce qu'on imaginait". C'est pour ces moments-là que
+                    je fais ce
+                    métier.
+                </p>
+                <p>
+                    Vous avez un projet ? Discutons-en. Je vous apporterai mes conseils techniques pour
+                    optimiser l'espace
+                    et le budget.
+                </p>
             </div>
-            <script src="js/main.js"></script>
-        </body>
+        </div>
+    </main>
+    <div id="contact">
+        <?php render_contact_minimal($contact_data); ?>
+    </div>
+    <script src="js/main.js"></script>
+</body>
 
 </html>

@@ -20,7 +20,7 @@ $header_data = [
 $contact_data = [
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '06 12 34 56 78'
+    'phone_number' => '+33 6 64 95 49 41'
 ];
 ?>
 <!DOCTYPE html>

@@ -20,7 +20,7 @@ $header_data = [
 $contact_data = [
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '06 12 34 56 78'
+    'phone_number' => '+33 6 64 95 49 41'
 ];
 ?>
 <!DOCTYPE html>
@@ -72,15 +72,15 @@ $contact_data = [
                 <h2>Repenser l'espace</h2>
                 <p>
                     La rénovation électrique, ce n'est pas que de la technique, c'est du confort.
-                    Pour Sophie, nous avons pratiqué des "saignées" discrètes dans les murs pour amener l'électricité là
+                    Pour Sophie, j'ai pratiqué des "saignées" discrètes dans les murs pour amener l'électricité là
                     où
                     elle en avait besoin.
-                    Nous avons ajouté des prises doubles avec ports USB intégrés près du canapé.
+                    J'ai ajouté des prises doubles avec ports USB intégrés près du canapé.
                 </p>
 
                 <h2>La lumière qui change tout</h2>
                 <p>
-                    Nous en avons profité pour moderniser l'éclairage. Fini le vieux lustre central qui éblouit.
+                    J'en ai profité pour moderniser l'éclairage. Fini le vieux lustre central qui éblouit.
                     J'ai installé des spots LED encastrés avec variateur d'intensité.
                     Plein feu pour faire le ménage, lumière tamisée pour la soirée cinéma.
                     Le résultat ? Un salon plus pur, plus sécurisé, et une ambiance transformée.

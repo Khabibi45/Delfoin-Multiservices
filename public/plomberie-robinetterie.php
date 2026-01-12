@@ -20,7 +20,7 @@ $header_data = [
 $contact_data = [
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '06 12 34 56 78'
+    'phone_number' => '+33 6 64 95 49 41'
 ];
 ?>
 <!DOCTYPE html>
@@ -63,7 +63,7 @@ $contact_data = [
 
 
                 <p>
-                    Nous connaissons tous ce bruit. <em>Ploc. Ploc.</em> Ce vieux robinet de cuisine qui refuse de
+                    Je connais ce bruit. <em>Ploc. Ploc.</em> Ce vieux robinet de cuisine qui refuse de
                     fermer
                     complètement, peu importe la force avec laquelle on serre le joint.
                     C'est pour ce genre de "petit" problème, qui devient vite horripilant (et coûteux en eau !), que je
@@ -73,7 +73,7 @@ $contact_data = [
 
                 <h2>Moderniser pour économiser</h2>
                 <p>
-                    Plutôt que de simplement changer un joint sur une robinetterie vieille de 15 ans, nous avons discuté
+                    Plutôt que de simplement changer un joint sur une robinetterie vieille de 15 ans, j'ai discuté
                     des
                     usages de M. Martin.
                     Il se plaignait aussi de la difficulté à régler la température.

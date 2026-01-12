@@ -20,7 +20,7 @@ $header_data = [
 $contact_data = [
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '06 12 34 56 78'
+    'phone_number' => '+33 6 64 95 49 41'
 ];
 ?>
 <!DOCTYPE html>
@@ -75,7 +75,7 @@ $contact_data = [
                     Je lui ai proposé une installation <strong>multisplit</strong> : une seule unité extérieure (pose
                     discrète sur le balcon sur silent-blocs pour éviter les vibrations) reliée à deux unités
                     intérieures.
-                    Nous avons choisi des modèles silencieux (moins de 20dB, c'est comme un chuchotement) pour ne pas
+                    J'ai choisi des modèles silencieux (moins de 20dB, c'est comme un chuchotement) pour ne pas
                     perturber son sommeil.
                 </p>
 

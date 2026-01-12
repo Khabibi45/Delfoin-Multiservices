@@ -103,7 +103,19 @@ $portfolio_data = [
             ],
             'size' => 'wide'
         ],
-        // Electricité Data - Coming Soon
+        // Electricité Data - THIRD
+        [
+            'category' => 'Electricité',
+            'filter_category' => 'electricite',
+            'title' => 'Rénovation Électrique',
+            'description' => 'Rénovation complète et mise aux normes de l\'installation électrique pour un confort et une sécurité optimale. Intégration de prises modernes et éclairage LED.',
+            'type' => 'carousel',
+            'images' => [
+                'images/photos/Electricite/elec1.jpeg',
+                'images/photos/Electricite/elec2.jpeg'
+            ],
+            'size' => ''
+        ],
 
     ],
     'cta' => [
@@ -127,7 +139,7 @@ $contact_data = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réalisations - Delfoin Multiservices</title>
     <meta name="description"
-        content="Découvrez nos chantiers en photos et vidéos : plomberie, électricité, climatisation à Gaillac et environs.">
+        content="Découvrez mes chantiers en photos et vidéos : plomberie, électricité, climatisation à Gaillac et environs.">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">

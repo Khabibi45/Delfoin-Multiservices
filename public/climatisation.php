@@ -54,14 +54,14 @@ $presentation_data = [
     'title' => 'Installation & Entretien',
     'image' => 'images/photos/Oncle_Camion_Zoom.jpeg', // Reusing available image
     'signature_dish' => '',
-    'bio_p1' => 'Ne subissez plus les fortes chaleurs. Nous vous proposons des solutions de climatisation adaptées à votre logement ou local commercial.',
-    'bio_p2' => 'Systèmes monosplit, multisplit ou gainable, nous assurons l\'installation, la mise en service et l\'entretien réglementaire de vos équipements.',
+    'bio_p1' => 'Ne subissez plus les fortes chaleurs. Je vous propose des solutions de climatisation adaptées à votre logement ou local commercial.',
+    'bio_p2' => 'Systèmes monosplit, multisplit ou gainable, j\'assure l\'installation, la mise en service et l\'entretien réglementaire de vos équipements.',
     'quote' => '',
     'credentials' => []
 ];
 
 $services_data = [
-    'overtitle' => 'Nos Prestations',
+    'overtitle' => 'Mes Prestations',
     'title' => 'Génie Climatique',
     'subtitle' => 'Un air sain à la bonne température.',
     'services' => [
@@ -113,7 +113,7 @@ $testimonials_data = [
 $contact_data = [
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '06 12 34 56 78'
+    'phone_number' => '+33 6 64 95 49 41'
 ];
 
 require_once 'modules/section-nav.php';

@@ -42,7 +42,7 @@ $header_data = [
 $hero_data = [
     'headline' => 'Expertise Électrique',
     'subheadline' => 'Installation, mise aux normes et dépannage de vos réseaux électriques.',
-    'cta_text' => 'Nos Solutions',
+    'cta_text' => 'Mes Solutions',
     'cta_link' => '#contact',
     'background_image' => 'images/photos/IMG_1717.jpeg',
     'show_scroll_indicator' => true
@@ -54,14 +54,14 @@ $presentation_data = [
     'title' => 'Fiabilité et Sécurité',
     'image' => 'images/photos/Oncle_Face.jpeg',
     'signature_dish' => '',
-    'bio_p1' => 'Une installation électrique vétuste peut être dangereuse. Nous assurons la mise en sécurité de votre habitation selon les normes NF C 15-100.',
-    'bio_p2' => 'Nous réalisons également l\'installation de tableaux électriques, prises, éclairages et la rénovation complète de vos installations.',
+    'bio_p1' => 'Une installation électrique vétuste peut être dangereuse. J\'assure la mise en sécurité de votre habitation selon les normes NF C 15-100.',
+    'bio_p2' => 'Je réalise également l\'installation de tableaux électriques, prises, éclairages et la rénovation complète de vos installations.',
     'quote' => '',
     'credentials' => []
 ];
 
 $services_data = [
-    'overtitle' => 'Nos Prestations',
+    'overtitle' => 'Mes Prestations',
     'title' => 'Services Électriques',
     'subtitle' => 'Des installations sûres et durables.',
     'services' => [
@@ -119,7 +119,7 @@ $testimonials_data = [
 $contact_data = [
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '06 12 34 56 78'
+    'phone_number' => '+33 6 64 95 49 41'
 ];
 
 require_once 'modules/section-nav.php';

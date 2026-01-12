@@ -24,7 +24,7 @@ $header_data = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le goutte-à-goutte qui rend fou - Delfoin Multiservices</title>
     <meta name="description"
-        content="Découvrez comment nous avons résolu un problème de robinetterie persistant à Gaillac. Rénovation plomberie et installation mitigeur.">
+        content="Découvrez comment j'ai résolu un problème de robinetterie persistant à Gaillac. Rénovation plomberie et installation mitigeur.">
 
     <!-- Fonts -->
     <link
@@ -58,25 +58,29 @@ $header_data = [
             <h1 class="project-detail__title">Le goutte-à-goutte qui rend fou</h1>
 
             <div class="project-detail__content">
-                <p>Nous connaissons tous ce bruit. Ploc. Ploc. Ce vieux robinet de cuisine qui refuse de fermer
+                <p>Je connais ce bruit. <em>Ploc. Ploc.</em> Ce vieux robinet de cuisine qui refuse de fermer
                     complètement, peu importe la force avec laquelle on serre le joint. C'est pour ce genre de "petit"
                     problème, qui devient vite horripilant (et coûteux en eau !), que je suis intervenu récemment chez
                     M. Martin.</p>
 
                 <h2>Moderniser pour économiser</h2>
-                <p>Plutôt que de simplement changer un joint sur une robinetterie vieille de 15 ans, nous avons discuté
-                    des usages de M. Martin. Il se plaignait aussi de la difficulté à régler la température. Je lui ai
-                    conseillé l'installation d'un mitigeur moderne avec douchette.</p>
+                <p>Plutôt que de simplement changer un joint sur une robinetterie vieille de 15 ans, j'ai discuté
+                    des usages de la cuisine avec ma cliente.
+                    Elle se plaignait aussi du manque de praticité pour remplir ses grandes casseroles.</p>
 
-                <p>En moins d'une heure, l'intervention était bouclée. Démontage de l'ancien matériel grippé (le moment
-                    critique où l'expérience compte pour ne pas abîmer l'évier !), nettoyage des portées de joint, et
-                    installation du nouveau matériel.</p>
+                <h2>La solution : un mitigeur douchette professionnel</h2>
+                <p>Je lui ai conseillé l'installation d'un mitigeur à bec haut avec douchette extractible.
+                    C'est robustesse et confort garantis. Le changement a été fait en moins d'une heure.</p>
+
+                <h2>Le résultat</h2>
+                <p>Fini le goutte-à-goutte énervant. Et surtout, une vraie amélioration du quotidien pour faire la
+                    vaisselle et la cuisine.
+                    C'est ça, mon métier : apporter des solutions durables, pas juste du "bricolage".</p>
 
                 <h2>Le confort au quotidien</h2>
                 <p>Aujourd'hui, non seulement le bruit du goutte-à-goutte a disparu, mais la cuisine est devenue plus
                     pratique. La robinetterie, c'est ce qu'on utilise le plus souvent dans une maison. Avoir un
                     équipement fiable, souple et précis, ça change le quotidien.</p>
-
                 <p>Que ce soit pour un simple remplacement standard, la pose d'une colonne de douche thermostatique ou
                     l'installation de vannes d'arrêt pour sécuriser votre installation, je m'occupe de tout avec le
                     souci du détail et de l'étanchéité parfaite.</p>

@@ -20,7 +20,7 @@ $header_data = [
 $contact_data = [
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '06 12 34 56 78'
+    'phone_number' => '+33 6 64 95 49 41'
 ];
 ?>
 <!DOCTYPE html>
@@ -81,7 +81,7 @@ $contact_data = [
 
                 <h2>Confort 4 Saisons</h2>
                 <p>
-                    Nous avons installé une unité console dans le salon (qui ressemble à un radiateur moderne) et des
+                    J'ai installé une unité console dans le salon (qui ressemble à un radiateur moderne) et des
                     splits
                     dans les chambres.
                     L'hiver suivant, Paul a divisé sa facture de chauffage par trois.

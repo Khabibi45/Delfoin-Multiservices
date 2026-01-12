@@ -20,7 +20,7 @@ $header_data = [
 $contact_data = [
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '06 12 34 56 78'
+    'phone_number' => '+33 6 64 95 49 41'
 ];
 ?>
 <!DOCTYPE html>
@@ -72,7 +72,7 @@ $contact_data = [
 
                 <h2>Une conception intelligente</h2>
                 <p>
-                    Nous avons pris les plans de la maison et imaginé leur vie dedans.
+                    J'ai pris les plans de la maison et imaginé leur vie dedans.
                     "Là, ce sera le coin TV, il faut prévoir des prises RJ45 pour internet. Ici, l'îlot de cuisine,
                     attention aux alimentations au sol."
                     L'électricité invisible, c'est celle qui est là exactement où on en a besoin.

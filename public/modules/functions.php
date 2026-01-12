@@ -56,8 +56,8 @@ function render_header_classic($data = [], $moduleId = '')
 function render_hero_classic($data = [], $moduleId = '')
 {
     $defaults = [
-        'headline' => 'Bienvenue sur notre site',
-        'subheadline' => 'Découvrez nos services exceptionnels et laissez-nous vous accompagner dans vos projets.',
+        'headline' => 'Bienvenue sur mon site',
+        'subheadline' => 'Découvrez mes services exceptionnels et laissez-moi vous accompagner dans vos projets.',
         'cta_text' => 'Découvrir',
         'cta_link' => '#services',
         'background_image' => 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920',
@@ -101,14 +101,14 @@ function render_hero_classic($data = [], $moduleId = '')
 function render_restaurant_chef($data = [], $moduleId = '')
 {
     $defaults = [
-        'intro' => 'Notre Chef',
+        'intro' => 'Votre Artisan',
         'name' => 'Pierre Durand',
         'title' => 'Chef Exécutif · Maître Restaurateur',
         'image' => 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&h=750&fit=crop',
         'signature_dish' => 'Homard Bleu Breton',
         'bio_p1' => 'Passionné de gastronomie depuis son plus jeune âge, Pierre Durand a forgé son talent auprès des plus grands noms de la cuisine française. Après avoir fait ses armes chez Alain Ducasse et passé trois ans au Japon pour maîtriser les techniques de la cuisine kaiseki, il revient en France avec une vision unique.',
         'bio_p2' => 'Sa philosophie : sublimer les produits du terroir français avec des touches d\'inspiration internationale, tout en respectant les saisons et les producteurs locaux qui partagent sa passion de l\'excellence.',
-        'quote' => 'La cuisine, c\'est l\'amour du produit et le respect de ceux qui le cultivent. Chaque assiette raconte une histoire, celle de nos terroirs et de nos rencontres.',
+        'quote' => 'La cuisine, c\'est l\'amour du produit et le respect de ceux qui le cultivent. Chaque assiette raconte une histoire, celle de mes terroirs et de mes rencontres.',
         'credentials' => [
             ['icon' => 'star', 'text' => '2 Étoiles Michelin'],
             ['icon' => 'badge', 'text' => 'Maître Restaurateur'],
@@ -206,8 +206,8 @@ function render_restaurant_chef($data = [], $moduleId = '')
 function render_services_grid($data = [], $moduleId = '')
 {
     $defaults = [
-        'overtitle' => 'Nos services',
-        'title' => 'Ce que nous faisons',
+        'overtitle' => 'Mes services',
+        'title' => 'Ce que je fais',
         'subtitle' => 'Des solutions sur mesure pour répondre à tous vos besoins.',
         'services' => [
             [
@@ -308,7 +308,7 @@ function render_services_grid($data = [], $moduleId = '')
 function render_testimonials_carousel($data = [], $moduleId = '')
 {
     $defaults = [
-        'title' => 'Ce que disent nos clients',
+        'title' => 'Ce que disent mes clients',
         'testimonials' => [
             [
                 'quote' => 'Une équipe exceptionnelle qui a su comprendre nos besoins et les traduire en une solution parfaite. Je recommande vivement !',
@@ -492,55 +492,204 @@ function render_faq_accordion($data = [], $moduleId = '')
         ]
     ];
     $config = array_merge($defaults, $data);
+    $faqId = 'faq-' . uniqid();
     ?>
-    <section class="faq-accordion" style="padding: 80px 20px; background: #f9f9f9;" data-module="<?= $moduleId ?>">
-        <div style="max-width: 800px; margin: 0 auto;">
-            <div style="text-align: center; margin-bottom: 40px;">
-                <h2 style="font-size: 2.5rem; color: #111827; margin-bottom: 16px;" data-field="title">
-                    <?= htmlspecialchars($config['title']) ?></h2>
-                <p style="color: #6B7280;" data-field="subtitle"><?= htmlspecialchars($config['subtitle']) ?></p>
+    <section class="faq-accordion" id="<?= $faqId ?>" data-module="<?= $moduleId ?>">
+        <div class="faq-accordion__wrapper">
+            <div class="faq-accordion__header">
+                <h2 class="faq-accordion__title" data-field="title">
+                    <?= htmlspecialchars($config['title']) ?>
+                </h2>
+                <p class="faq-accordion__subtitle" data-field="subtitle"><?= htmlspecialchars($config['subtitle']) ?></p>
             </div>
 
             <div class="faq-accordion__container">
                 <?php foreach ($config['items'] as $index => $item): ?>
-                    <div class="accordion-item"
-                        style="background: white; border-radius: 8px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                        <button class="accordion-header"
-                            style="width: 100%; padding: 20px; text-align: left; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1.1rem; color: #111827;"
-                            onclick="this.parentElement.classList.toggle('active');">
-                            <span data-field="items.<?= $index ?>.question"><?= htmlspecialchars($item['question']) ?></span>
-                            <span style="font-size: 1.5rem; color: #E8A082;">+</span>
+                    <div class="faq-item" data-faq-item>
+                        <button class="faq-item__header" type="button" aria-expanded="false">
+                            <span class="faq-item__question"
+                                data-field="items.<?= $index ?>.question"><?= htmlspecialchars($item['question']) ?></span>
+                            <span class="faq-item__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </span>
                         </button>
-                        <div class="accordion-content"
-                            style="display: none; padding: 0 20px 20px; color: #4B5563; line-height: 1.6;">
-                            <p data-field="items.<?= $index ?>.answer"><?= nl2br(htmlspecialchars($item['answer'])) ?></p>
+                        <div class="faq-item__content">
+                            <div class="faq-item__answer" data-field="items.<?= $index ?>.answer">
+                                <?= $item['answer'] ?>
+                            </div>
                         </div>
                     </div>
                 <?php endforeach; ?>
             </div>
         </div>
-        <style>
-            .accordion-item.active .accordion-content {
-                display: block;
-                animation: slideDown 0.3s ease-out;
-            }
-
-            .accordion-item.active .accordion-header span:last-child {
-                transform: rotate(45deg);
-            }
-
-            @keyframes slideDown {
-                from {
-                    opacity: 0;
-                    transform: translateY(-10px);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-        </style>
     </section>
+
+    <style>
+        .faq-accordion {
+            padding: 80px 20px;
+            background: var(--color-background-alt, #F5F7FA);
+        }
+
+        .faq-accordion__wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-accordion__header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .faq-accordion__title {
+            font-family: var(--font-heading, 'Montserrat', sans-serif);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-text-primary, #00324D);
+            margin-bottom: 16px;
+        }
+
+        .faq-accordion__subtitle {
+            font-family: var(--font-body, 'Inter', sans-serif);
+            color: var(--color-text-secondary, #4A6580);
+            font-size: 1.1rem;
+        }
+
+        .faq-accordion__container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .faq-item {
+            background: var(--color-surface, #FFFFFF);
+            border-radius: var(--radius-large, 12px);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 50, 77, 0.06);
+            border: 1px solid var(--color-border, #E2E8ED);
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 16px rgba(0, 50, 77, 0.1);
+            border-color: var(--color-primary, #45B97C);
+        }
+
+        .faq-item__header {
+            width: 100%;
+            padding: 24px;
+            text-align: left;
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            font-family: var(--font-heading, 'Montserrat', sans-serif);
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--color-text-primary, #00324D);
+            transition: color 0.2s ease;
+        }
+
+        .faq-item__header:hover {
+            color: var(--color-primary, #45B97C);
+        }
+
+        .faq-item__question {
+            flex: 1;
+        }
+
+        .faq-item__icon {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-background-alt, #F5F7FA);
+            border-radius: 50%;
+            color: var(--color-primary, #45B97C);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .faq-item.active .faq-item__icon {
+            transform: rotate(45deg);
+            background: var(--color-primary, #45B97C);
+            color: white;
+        }
+
+        .faq-item__content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+
+        .faq-item.active .faq-item__content {
+            max-height: 600px;
+        }
+
+        .faq-item__answer {
+            padding: 0 24px 24px;
+            font-family: var(--font-body, 'Inter', sans-serif);
+            color: var(--color-text-secondary, #4A6580);
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .faq-item__answer br {
+            display: block;
+            margin-bottom: 8px;
+            content: "";
+        }
+
+        @media (max-width: 768px) {
+            .faq-accordion {
+                padding: 60px 16px;
+            }
+
+            .faq-accordion__title {
+                font-size: 1.8rem;
+            }
+
+            .faq-item__header {
+                padding: 20px;
+                font-size: 1rem;
+            }
+
+            .faq-item__answer {
+                padding: 0 20px 20px;
+            }
+        }
+    </style>
+
+    <script>
+        (function () {
+            const container = document.getElementById('<?= $faqId ?>');
+            const items = container.querySelectorAll('[data-faq-item]');
+
+            items.forEach(item => {
+                const header = item.querySelector('.faq-item__header');
+
+                header.addEventListener('click', function () {
+                    const isActive = item.classList.contains('active');
+
+                    // Toggle current item
+                    if (isActive) {
+                        item.classList.remove('active');
+                        header.setAttribute('aria-expanded', 'false');
+                    } else {
+                        item.classList.add('active');
+                        header.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+        })();
+    </script>
     <?php
 }
+

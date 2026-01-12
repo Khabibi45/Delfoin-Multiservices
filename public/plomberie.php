@@ -55,14 +55,14 @@ $presentation_data = [
     'title' => 'Plomberie Générale',
     'image' => 'images/photos/Oncle_Camion_Zoom.jpeg', // Reusing available image
     'signature_dish' => '',
-    'bio_p1' => 'Une fuite d’eau ? Un problème de canalisation ? Nous intervenons rapidement pour tous vos dépannages de plomberie.',
-    'bio_p2' => 'Nous réalisons également l\'installation complète de vos salles de bain, cuisines et sanitaires avec des matériaux de qualité.',
+    'bio_p1' => 'Une fuite d’eau ? Un problème de canalisation ? J\'interviens rapidement pour tous vos dépannages de plomberie.',
+    'bio_p2' => 'Je réalise également l\'installation complète de vos salles de bain, cuisines et sanitaires avec des matériaux de qualité.',
     'quote' => '',
     'credentials' => []
 ];
 
 $services_data = [
-    'overtitle' => 'Nos Prestations',
+    'overtitle' => 'Mes Prestations',
     'title' => 'Travaux de Plomberie',
     'subtitle' => 'Tout pour votre confort et hygiène.',
     'services' => [
@@ -102,7 +102,7 @@ $services_data = [
 $contact_data = [
     'title' => 'un projet, une idée, <span style="color: #3AAA6D;">une urgence... ?</span>',
     'email' => 'Delfoin.multiservices@gmail.com',
-    'phone_number' => '06 12 34 56 78'
+    'phone_number' => '+33 6 64 95 49 41'
 ];
 
 require_once 'modules/section-nav.php';

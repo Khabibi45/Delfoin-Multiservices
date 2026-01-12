@@ -66,7 +66,7 @@ $header_classic_data = get_module_content('header-classic', $header_classic_data
 $hero_classic_data_default = array(
     'headline' => '<span style="color: #FFFFFF;">DELFOIN</span> <span style="color: #45B97C;">Multiservices</span>',
     'subheadline' => 'Plomberie, Electricité et Climatisation. Installation, rénovation et dépannage.',
-    'cta_text' => 'Nos Services',
+    'cta_text' => 'Mes Services',
     'cta_link' => '#services',
     'background_image' => 'images/photos/IMG_1717.jpeg',
     'show_scroll_indicator' => true
@@ -75,7 +75,7 @@ $hero_classic_data = get_module_content('hero-classic', $hero_classic_data_defau
 
 // Module: restaurant-chef (Used for Presentation)
 $restaurant_chef_data_default = array(
-    'intro' => 'À propos de nous',
+    'intro' => 'À propos de moi',
     'name' => 'Antoine',
     'title' => 'Plombier, Électricien & Climaticien à Albi et environs',
     'image' => 'images/photos/Oncle_Face.jpeg',
@@ -89,8 +89,8 @@ $restaurant_chef_data = get_module_content('restaurant-chef', $restaurant_chef_d
 
 // Module: services-grid
 $services_grid_data_default = array(
-    'overtitle' => 'Nos Domaines d\'Expertise',
-    'title' => 'Nos prestations techniques',
+    'overtitle' => 'Mes Domaines d\'Expertise',
+    'title' => 'Mes prestations techniques',
     'subtitle' => 'Des solutions professionnelles pour votre confort thermique et sanitaire.',
     'services' => [
         [
@@ -117,7 +117,7 @@ $services_grid_data = get_module_content('services-grid', $services_grid_data_de
 
 // Module: testimonials-carousel
 $testimonials_carousel_data_default = array(
-    'title' => 'Ce que disent nos clients',
+    'title' => 'Ce que disent mes clients',
     'testimonials' => [
         [
             'quote' => 'Réponse rapide. Travail propre et soigné tarif correct . Je recommande.',
@@ -159,23 +159,23 @@ $contact_minimal_data = get_module_content('contact-minimal', $contact_minimal_d
 // Module: faq-accordion
 $faq_data_default = array(
     'title' => 'Questions Fréquentes',
-    'subtitle' => 'Tout savoir sur nos interventions plomberie, électricité et clim.',
+    'subtitle' => 'Tout savoir sur mes interventions plomberie, électricité et clim.',
     'items' => [
         [
-            'question' => 'Intervenez-vous en urgence ?',
-            'answer' => 'Oui, pour les pannes critiques (fuite d\'eau importante, panne électrique totale), nous intervenons 7j/7 dans le secteur de Gaillac et Albi.'
+            'question' => 'Intervenez vous en urgence ?',
+            'answer' => 'Oui.<br>En cas d’urgence (fuite d’eau, panne électrique, chauffe-eau hors service, problème de climatisation), j’interviens le plus rapidement possible selon mes disponibilités.<br>Vous pouvez me contacter directement par téléphone afin d’évaluer la situation et organiser une intervention rapide sur Albi, Gaillac et le Tarn.'
         ],
         [
             'question' => 'Quel est votre périmètre d\'intervention ?',
-            'answer' => 'Nous nous déplaçons principalement sur Gaillac (81600), Albi, Rabastens, Lisle-sur-Tarn et dans un rayon de 30 km alentour.'
+            'answer' => 'Je suis basé à Albi et j’interviens sur Albi, Gaillac, Cordes-sur-Ciel, Carmaux et plus largement dans tout le Tarn (81).<br>Pour toute demande hors secteur, vous pouvez me contacter afin d’étudier la faisabilité.'
         ],
         [
-            'question' => 'Vos travaux sont-ils couverts par une garantie ?',
-            'answer' => 'Absolument. En tant qu\'artisan qualifié, toutes nos installations sont couvertes par une garantie décennale et responsabilité civile professionnelle.'
+            'question' => 'Vos travaux sont ils couverts par une garantie ?',
+            'answer' => 'Oui, je dispose d’une assurance responsabilité civile professionnelle et d’une garantie décennale, couvrant les travaux concernés, pour vous assurer une intervention en toute sérénité.'
         ],
         [
             'question' => 'Comment obtenir un devis ?',
-            'answer' => 'C\'est simple et gratuit. Contactez-nous par téléphone ou via le bouton de contact en bas de page pour une estimation rapide de votre projet.'
+            'answer' => 'Pour obtenir un devis, c’est simple :<br>Vous pouvez me contacter par téléphone ou via le formulaire de contact du site en décrivant votre besoin.<br>Après échange et, si nécessaire, une visite sur place, je vous transmets un devis gratuit, clair et sans engagement, avant toute intervention.'
         ]
     ]
 );
@@ -186,6 +186,7 @@ $section_nav_links = [
     ['text' => 'Présentation', 'anchor' => '#presentation'],
     ['text' => 'Services', 'anchor' => '#services'],
     ['text' => 'Avis', 'anchor' => '#testimonials'],
+    ['text' => 'FAQ', 'anchor' => '#faq'],
     ['text' => 'Contact', 'anchor' => '#contact']
 ];
 
